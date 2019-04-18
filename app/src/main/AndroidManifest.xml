@@ -19,7 +19,8 @@
         <activity android:name=".NetworkActivity" />
         <activity android:name=".HandlerActivity" />
         <activity android:name=".SingletonActivity" />
-        <activity android:name=".StackActivity"></activity>
+        <activity android:name=".StackActivity" />
+        <activity android:name=".ThreadModifyActivity" />
     </application>
 
 </manifest>

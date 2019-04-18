@@ -32,4 +32,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, StackActivity.class);
         startActivity(intent);
     }
+
+    public void threadModify(View view) {
+        Intent intent = new Intent(this, ThreadModifyActivity.class);
+        startActivity(intent);
+    }
 }

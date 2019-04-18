@@ -35,4 +35,12 @@
         android:layout_height="wrap_content"
         android:onClick="startStack"
         android:text="自定义堆栈泄露" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:onClick="threadModify"
+        android:text="子线程修改UI" />
+
 </LinearLayout>
