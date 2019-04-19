@@ -21,6 +21,8 @@
         <activity android:name=".SingletonActivity" />
         <activity android:name=".StackActivity" />
         <activity android:name=".ThreadModifyActivity" />
+        <activity android:name=".SyncBarrierActivity" />
+        <activity android:name=".ChoreographerActivity"></activity>
     </application>
 
 </manifest>

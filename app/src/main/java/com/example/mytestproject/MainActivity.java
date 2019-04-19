@@ -37,4 +37,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ThreadModifyActivity.class);
         startActivity(intent);
     }
+
+    public void testAsyncMessage(View view) {
+        Intent intent = new Intent(this, SyncBarrierActivity.class);
+        startActivity(intent);
+    }
+
+    public void choreographer(View view) {
+        Intent intent = new Intent(this, ChoreographerActivity.class);
+        startActivity(intent);
+    }
 }
