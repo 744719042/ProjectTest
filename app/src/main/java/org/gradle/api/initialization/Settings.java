@@ -57,10 +57,10 @@ import java.util.Map;
  *
  * <ul>
  *
- * <li>Defined in the {@value org.gradle.api.Project#GRADLE_PROPERTIES} file located in the settings directory of the
+ * <li>Defined in the {@value Project#GRADLE_PROPERTIES} file located in the settings directory of the
  * build.</li>
  *
- * <li>Defined the {@value org.gradle.api.Project#GRADLE_PROPERTIES} file located in the user's {@code .gradle}
+ * <li>Defined the {@value Project#GRADLE_PROPERTIES} file located in the user's {@code .gradle}
  * directory.</li>
  *
  * <li>Provided on the command-line using the -P option.</li>

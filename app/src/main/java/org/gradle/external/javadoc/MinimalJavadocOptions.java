@@ -40,7 +40,7 @@ public interface MinimalJavadocOptions {
 
     void setDocletClasspath(List<File> docletClasspath);
 
-    MinimalJavadocOptions docletClasspath(File ... docletClasspath);
+    MinimalJavadocOptions docletClasspath(File... docletClasspath);
 
     String getSource();
 
@@ -54,7 +54,7 @@ public interface MinimalJavadocOptions {
 
     MinimalJavadocOptions sourcepath(List<File> sourcepath);
 
-    MinimalJavadocOptions sourcepath(File ... sourcepath);
+    MinimalJavadocOptions sourcepath(File... sourcepath);
 
     List<File> getClasspath();
 
@@ -62,31 +62,31 @@ public interface MinimalJavadocOptions {
 
     MinimalJavadocOptions classpath(List<File> classpath);
 
-    MinimalJavadocOptions classpath(File ... classpath);
+    MinimalJavadocOptions classpath(File... classpath);
 
     List<String> getSubPackages();
 
     void setSubPackages(List<String> subPackages);
 
-    MinimalJavadocOptions subPackages(String ... subPackages);
+    MinimalJavadocOptions subPackages(String... subPackages);
 
     List<String> getExclude();
 
     void setExclude(List<String> exclude);
 
-    MinimalJavadocOptions exclude(String ... exclude);
+    MinimalJavadocOptions exclude(String... exclude);
 
     List<File> getBootClasspath();
 
     void setBootClasspath(List<File> bootClasspath);
 
-    MinimalJavadocOptions bootClasspath(File ... bootClasspath);
+    MinimalJavadocOptions bootClasspath(File... bootClasspath);
 
     List<File> getExtDirs();
 
     void setExtDirs(List<File> extDirs);
 
-    MinimalJavadocOptions extDirs(File ... extDirs);
+    MinimalJavadocOptions extDirs(File... extDirs);
 
     JavadocOutputLevel getOutputLevel();
 
@@ -122,13 +122,13 @@ public interface MinimalJavadocOptions {
 
     void setJFlags(List<String> jFlags);
 
-    MinimalJavadocOptions jFlags(String ... jFlags);
+    MinimalJavadocOptions jFlags(String... jFlags);
 
     List<File> getOptionFiles();
 
     void setOptionFiles(List<File> optionFiles);
 
-    MinimalJavadocOptions optionFiles(File ... argumentFiles);
+    MinimalJavadocOptions optionFiles(File... argumentFiles);
 
     File getDestinationDirectory();
 
@@ -148,13 +148,13 @@ public interface MinimalJavadocOptions {
 
     void setPackageNames(List<String> packageNames);
 
-    MinimalJavadocOptions packageNames(String ... packageNames);
+    MinimalJavadocOptions packageNames(String... packageNames);
 
     List<String> getSourceNames();
 
     void setSourceNames(List<String> sourceNames);
 
-    MinimalJavadocOptions sourceNames(String ... sourceNames);
+    MinimalJavadocOptions sourceNames(String... sourceNames);
 
     void contributeCommandLineOptions(ExecHandleBuilder execHandleBuilder);
 }

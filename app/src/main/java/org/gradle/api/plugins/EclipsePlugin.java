@@ -40,7 +40,7 @@ import java.util.Set;
 
 /**
  * <p>A {@link org.gradle.api.Plugin} which generates Eclipse project files for projects that use the {@link
- * org.gradle.api.plugins.JavaPlugin} or the {@link org.gradle.api.plugins.WarPlugin}.</p>
+ * JavaPlugin} or the {@link WarPlugin}.</p>
  *
  * @author Hans Dockter
  */

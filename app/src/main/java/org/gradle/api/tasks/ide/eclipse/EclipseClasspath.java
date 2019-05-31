@@ -249,7 +249,7 @@ public class EclipseClasspath extends ConventionTask {
     /**
      * Returns the project dependencies to be transformed into eclipse project dependencies.
      *
-     * @see #setProjectDependencies(java.util.List)
+     * @see #setProjectDependencies(List)
      */
     public List<DefaultProjectDependency> getProjectDependencies() {
         return projectDependencies;
@@ -267,7 +267,7 @@ public class EclipseClasspath extends ConventionTask {
     /**
      * Returns a list with library paths to be transformed into eclipse lib dependencies.
      *
-     * @see #setClasspathLibs(java.util.List)
+     * @see #setClasspathLibs(List)
      */
     public List<Object> getClasspathLibs() {
         return classpathLibs;

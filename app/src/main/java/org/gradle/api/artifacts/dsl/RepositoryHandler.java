@@ -72,7 +72,7 @@ public interface RepositoryHandler extends ResolverContainer, IConventionAware, 
     /**
      * Adds a repository which looks in the Maven central repository for dependencies. The URL used to access this repository is
      * always {@link #MAVEN_CENTRAL_URL}. The behavior of this resolver
-     * is otherwise the same as the ones added by {@link #mavenRepo(java.util.Map)}.
+     * is otherwise the same as the ones added by {@link #mavenRepo(Map)}.
      *
      * The following parameter are accepted as keys for the map:
      *
@@ -100,7 +100,7 @@ public interface RepositoryHandler extends ResolverContainer, IConventionAware, 
      *
      * @param args A list of urls of repositories to look for artifacts only.
      * @return the added resolver
-     * @see #mavenRepo(java.util.Map)
+     * @see #mavenRepo(Map)
      */
     DependencyResolver mavenCentral(Map args);
 
@@ -117,15 +117,15 @@ public interface RepositoryHandler extends ResolverContainer, IConventionAware, 
      * </p>
      *
      * @return the added resolver
-     * @see #mavenRepo(java.util.Map)
-     * @see #mavenCentral(java.util.Map)
+     * @see #mavenRepo(Map)
+     * @see #mavenCentral(Map)
      */
     DependencyResolver mavenCentral();
 
     /**
      * Adds a repository which is Maven compatible. The compatibility is in regard to layout, snapshothandling and
      * dealing with the pom.xml. This repository can't be used for publishing in a Maven compatible way. For publishing
-     * to a Maven repository, have a look at {@link #mavenDeployer(java.util.Map)} or {@link #mavenInstaller(java.util.Map)}.
+     * to a Maven repository, have a look at {@link #mavenDeployer(Map)} or {@link #mavenInstaller(Map)}.
      *
      * By default the repository accepts to resolve artifacts without a pom. The repository always looks first for the pom
      * in the root repository. It then looks for the artifact in the root repository. Sometimes the artifact
@@ -162,7 +162,7 @@ public interface RepositoryHandler extends ResolverContainer, IConventionAware, 
      *
      * @param args The argument to create the repository
      * @return the added repository
-     * @see #mavenCentral(java.util.Map)
+     * @see #mavenCentral(Map)
      */
     DependencyResolver mavenRepo(Map args);
 
@@ -188,12 +188,12 @@ public interface RepositoryHandler extends ResolverContainer, IConventionAware, 
      * 
      * @param args The argument to create the repository
      * @return The added repository
-     * @see #mavenDeployer(java.util.Map, groovy.lang.Closure)
+     * @see #mavenDeployer(Map, groovy.lang.Closure)
      */
     GroovyMavenDeployer mavenDeployer(Map args);
 
     /**
-     * Behaves the same way as {@link #mavenDeployer(java.util.Map)}. Additionally a closure can be passed to
+     * Behaves the same way as {@link #mavenDeployer(Map)}. Additionally a closure can be passed to
      * further configure the added repository.
      *  
      * @param args The argument to create the repository
@@ -223,12 +223,12 @@ public interface RepositoryHandler extends ResolverContainer, IConventionAware, 
      *
      * @param args The argument to create the repository
      * @return The added repository
-     * @see #mavenInstaller(java.util.Map, groovy.lang.Closure) (java.util.Map, groovy.lang.Closure)
+     * @see #mavenInstaller(Map, groovy.lang.Closure) (java.util.Map, groovy.lang.Closure)
      */
     MavenResolver mavenInstaller(Map args);
 
     /**
-     * Behaves the same way as {@link #mavenInstaller(java.util.Map)}. Additionally a closure can be passed to
+     * Behaves the same way as {@link #mavenInstaller(Map)}. Additionally a closure can be passed to
      * further configure the added repository.
      *
      * @param args The argument to create the repository

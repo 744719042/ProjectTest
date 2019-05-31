@@ -26,12 +26,12 @@ import groovy.lang.Closure;
  * script uses. You can obtain a {@code ScriptHandler} instance using {@link org.gradle.api.Project#getBuildscript()}.
  * </p>
  *
- * <p>To declare the script classpath, you use the {@link org.gradle.api.artifacts.dsl.DependencyHandler} provided by
+ * <p>To declare the script classpath, you use the {@link DependencyHandler} provided by
  * {@link #getDependencies()} to attach dependencies to the {@value #CLASSPATH_CONFIGURATION} configuration. These
  * dependencies are resolved just prior to script compilation, and assembled into the classpath for the script.</p>
  *
  * <p>For most external dependencies you will also need to declare one or more repositories where the dependencies can
- * be found, using the {@link org.gradle.api.artifacts.dsl.RepositoryHandler} provided by {@link
+ * be found, using the {@link RepositoryHandler} provided by {@link
  * #getRepositories()}.</p>
  */
 public interface ScriptHandler {

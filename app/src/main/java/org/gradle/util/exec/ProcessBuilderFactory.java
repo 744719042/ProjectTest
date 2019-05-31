@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 /**
- * Creates a {@link java.lang.ProcessBuilder} based on a {@link org.gradle.util.exec.ExecHandle}.
+ * Creates a {@link ProcessBuilder} based on a {@link ExecHandle}.
  *
  * @author Tom Eyckmans
  */

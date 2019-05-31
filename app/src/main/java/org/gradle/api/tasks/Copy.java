@@ -34,7 +34,7 @@ import java.util.Map;
 
 /**
  * Task for copying files.  This task can also rename and filter files as it copies.
- * The task implements {@link org.gradle.api.tasks.copy.CopySpec CopySpec} for specifying
+ * The task implements {@link CopySpec CopySpec} for specifying
  * what to copy.
  * <p>
  * Examples:

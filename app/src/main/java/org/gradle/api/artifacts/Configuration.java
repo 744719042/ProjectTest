@@ -38,7 +38,7 @@ public interface Configuration extends FileCollection {
     /**
      * Returns the state of the configuration.
      *
-     * @see org.gradle.api.artifacts.Configuration.State
+     * @see State
      */
     State getState();
 
@@ -140,7 +140,7 @@ public interface Configuration extends FileCollection {
 
     /**
      * Takes a closure which gets coerced into a Spec. Behaves otherwise in the same way as
-     * {@link #files(org.gradle.api.specs.Spec)}.
+     * {@link #files(Spec)}.
      *
      * @param dependencySpecClosure The closure describing a filter applied to the all the dependencies of this configuration (including dependencies from extended configurations).
      * @return The files of a subset of dependencies of this configuration.
@@ -179,7 +179,7 @@ public interface Configuration extends FileCollection {
 
     /**
      * Takes a closure which gets coerced into a Spec. Behaves otherwise in the same way as
-     * {@link #fileCollection(org.gradle.api.specs.Spec)}.
+     * {@link #fileCollection(Spec)}.
      *
      * @param dependencySpecClosure The closure describing a filter applied to the all the dependencies of this configuration (including dependencies from extended configurations).
      * @return The FileCollection with a subset of dependencies of this configuration.
@@ -302,13 +302,13 @@ public interface Configuration extends FileCollection {
     /**
      * Returns the exclude rules applied for resolving any dependency of this configuration.
      *
-     * @see #exclude(java.util.Map)
+     * @see #exclude(Map)
      */
     Set<ExcludeRule> getExcludeRules();
 
     /**
      * Adds an exclude rule to exclude transitive dependencies for all dependencies of this configuration.
-     * You can also add exclude rules per-dependency. See {@link ModuleDependency#exclude(java.util.Map)}.
+     * You can also add exclude rules per-dependency. See {@link ModuleDependency#exclude(Map)}.
      *
      * @param excludeProperties the properties to define the exclude rule.
      * @return this
@@ -368,7 +368,7 @@ public interface Configuration extends FileCollection {
     Configuration copyRecursive(Spec<Dependency> dependencySpec);
 
     /**
-     * Takes a closure which gets coerced into a Spec. Behaves otherwise in the same way as {@link #copy(org.gradle.api.specs.Spec)}
+     * Takes a closure which gets coerced into a Spec. Behaves otherwise in the same way as {@link #copy(Spec)}
      *
      * @param dependencySpec filtering requirements
      * @return copy of this configuration
@@ -376,7 +376,7 @@ public interface Configuration extends FileCollection {
     Configuration copy(Closure dependencySpec);
 
     /**
-     * Takes a closure which gets coerced into a Spec. Behaves otherwise in the same way as {@link #copyRecursive(org.gradle.api.specs.Spec)}
+     * Takes a closure which gets coerced into a Spec. Behaves otherwise in the same way as {@link #copyRecursive(Spec)}
      *
      * @param dependencySpec filtering requirements
      * @return copy of this configuration

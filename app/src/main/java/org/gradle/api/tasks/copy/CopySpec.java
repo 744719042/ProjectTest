@@ -135,7 +135,7 @@ public interface CopySpec {
      * patterns to be copied.
      * @param includes a vararg list of include patterns
      */
-    CopySpec include(String ... includes);
+    CopySpec include(String... includes);
 
     /**
      * Adds an ANT style exclude pattern to the copy specification.
@@ -150,7 +150,7 @@ public interface CopySpec {
      *
      * @param excludes a vararg list of exclude patterns
      */
-    CopySpec exclude(String ... excludes);
+    CopySpec exclude(String... excludes);
 
     /**
      * Maps a source file to a different relative location under the target directory.

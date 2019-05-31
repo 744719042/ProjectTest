@@ -28,7 +28,7 @@ public interface GroovyPomFilterContainer extends PomFilterContainer {
      * @param filter The filter
      * @return The Maven pom associated with the closure
      * @see PublishFilter
-     * @see PomFilterContainer#addFilter(String, org.gradle.api.artifacts.maven.PublishFilter)
+     * @see PomFilterContainer#addFilter(String, PublishFilter)
      */
     MavenPom addFilter(String name, Closure filter);
 
@@ -37,7 +37,7 @@ public interface GroovyPomFilterContainer extends PomFilterContainer {
      *
      * @param filter The filter to be set
      * @see PublishFilter
-     * @see PomFilterContainer#setFilter(org.gradle.api.artifacts.maven.PublishFilter)
+     * @see PomFilterContainer#setFilter(PublishFilter)
      */
     void filter(Closure filter);
 

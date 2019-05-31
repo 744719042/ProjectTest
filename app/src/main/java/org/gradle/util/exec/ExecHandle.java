@@ -33,7 +33,7 @@ public interface ExecHandle {
 
     List<ExecHandleListener> getListeners();
 
-    void addListeners(ExecHandleListener ... listeners);
+    void addListeners(ExecHandleListener... listeners);
 
-    void removeListeners(ExecHandleListener ... listeners);
+    void removeListeners(ExecHandleListener... listeners);
 }

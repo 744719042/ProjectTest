@@ -177,7 +177,7 @@ public class EclipseWtp extends ConventionTask {
     /**
      * Returns the project dependencies to be transformed into eclipse project dependencies.
      *
-     * @see #setProjectDependencies(java.util.List)
+     * @see #setProjectDependencies(List)
      */
     public List<DefaultProjectDependency> getProjectDependencies() {
         return projectDependencies;
@@ -195,7 +195,7 @@ public class EclipseWtp extends ConventionTask {
     /**
      * Returns a list with library paths to be deployed as war lib dependencies.
      *
-     * @see #setWarLibs(java.util.List)
+     * @see #setWarLibs(List)
      */
     public List<Object> getWarLibs() {
         return warLibs;
@@ -213,7 +213,7 @@ public class EclipseWtp extends ConventionTask {
     /**
      * Returns the war resource mappings
      *
-     * @see #setWarResourceMappings(java.util.Map)
+     * @see #setWarResourceMappings(Map)
      */
     public Map<String, List<Object>> getWarResourceMappings() {
         return warResourceMappings;

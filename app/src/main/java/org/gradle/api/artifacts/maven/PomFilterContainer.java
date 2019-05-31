@@ -26,17 +26,17 @@ public interface PomFilterContainer {
     /**
      * Returns the default filter being used. .
      *
-     * @see #setFilter(org.gradle.api.artifacts.maven.PublishFilter)
+     * @see #setFilter(PublishFilter)
      */
     PublishFilter getFilter();
 
     /**
-     * <p>Sets the default filter to be used. This filter is active if no custom filters have been added (see {@link #addFilter(String, org.gradle.api.artifacts.maven.PublishFilter)}).
+     * <p>Sets the default filter to be used. This filter is active if no custom filters have been added (see {@link #addFilter(String, PublishFilter)}).
      * If at least one custom filter has been added the default filter is not used any longer.</p>
      * <p>The default for this property is {@link PublishFilter#ALWAYS_ACCEPT}.
      * If there is only one artifact you are fine with this filter. If there is more than one artifact, deployment will lead to
      * an exception, if you don't specify a filter that selects the artifact to deploy. If you want to deploy more than one artiact you have
-     * to use the (see {@link #addFilter(String, org.gradle.api.artifacts.maven.PublishFilter)} method.</p>
+     * to use the (see {@link #addFilter(String, PublishFilter)} method.</p>
      *
      * @param defaultFilter
      * @see #getFilter()
@@ -54,7 +54,7 @@ public interface PomFilterContainer {
     MavenPom getPom();
 
     /**
-     * <p>Sets the default pom to be used. This pom is active if no custom filters have been added (see {@link #addFilter(String, org.gradle.api.artifacts.maven.PublishFilter)}).
+     * <p>Sets the default pom to be used. This pom is active if no custom filters have been added (see {@link #addFilter(String, PublishFilter)}).
      * If at least one custom filter has been added the default pom is not used any longer.</p>
      * <p>Usually you don't need to set this property as the default value provides you a pom object you might use for configuration.
      * By default the properties of such a pom object are all null.
@@ -77,14 +77,14 @@ public interface PomFilterContainer {
     MavenPom addFilter(String name, PublishFilter publishFilter);
 
     /**
-     * Returns a filter added with {@link #addFilter(String, org.gradle.api.artifacts.maven.PublishFilter)}
+     * Returns a filter added with {@link #addFilter(String, PublishFilter)}
      *
      * @param name The name of the filter
      */
     PublishFilter filter(String name);
 
     /**
-     * Returns the pom associated with a filter added with {@link #addFilter(String, org.gradle.api.artifacts.maven.PublishFilter)}.
+     * Returns the pom associated with a filter added with {@link #addFilter(String, PublishFilter)}.
      *
      * @param name The name of the filter.
      */

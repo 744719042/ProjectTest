@@ -5,7 +5,7 @@ import org.gradle.api.Task;
 /**
  * <p>A {@code TaskExecutionListener} is notified of the execution of the tasks in a build.</p>
  *
- * <p>You can add a {@code TaskExecutionListener} to a build using {@link org.gradle.api.execution.TaskExecutionGraph#addTaskExecutionListener}
+ * <p>You can add a {@code TaskExecutionListener} to a build using {@link TaskExecutionGraph#addTaskExecutionListener}
  */
 public interface TaskExecutionListener {
     /**

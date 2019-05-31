@@ -116,7 +116,7 @@ public class StandardOutputLoggingAdapter extends OutputStream {
      * The 24 high-order bits of <code>b</code> are ignored.
      *
      * @param b the <code>byte</code> to write
-     * @throws java.io.IOException if an I/O error occurs. In particular, an <code>IOException</code> may be thrown if
+     * @throws IOException if an I/O error occurs. In particular, an <code>IOException</code> may be thrown if
      * the output stream has been closed.
      */
     public void write(final int b) throws IOException {

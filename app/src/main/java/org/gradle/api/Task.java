@@ -69,7 +69,7 @@ import java.util.Set;
  *
  * <p>A task may have dependencies on other tasks. Gradle ensures that tasks are executed in dependency order, so that
  * the dependencies of a task are executed before the task is executed.  You can add dependencies to a task using {@link
- * #dependsOn(Object[])} or {@link #setDependsOn(java.util.Set)}.  You can add objects of any of the following types as
+ * #dependsOn(Object[])} or {@link #setDependsOn(Set)}.  You can add objects of any of the following types as
  * a depedency:</p>
  *
  * <ul>
@@ -197,7 +197,7 @@ public interface Task extends Comparable<Task> {
     /**
      * <p>Execute the task only if the closure returns true.  The closure will be evaluated at the
      * task execution time, not during configuration.  The closure will be passed a single parameter,
-     * this task.  The closure will be coerced to a {@link org.gradle.api.specs.Spec} of type {@link Task}.
+     * this task.  The closure will be coerced to a {@link Spec} of type {@link Task}.
      * </p>
      * <p>If the closure returns false, the task will not execute, but will log a message of
      * 'SKIPPED as onlyIf is false'.</p>
@@ -353,7 +353,7 @@ public interface Task extends Comparable<Task> {
      * Disables redirection of standard output during task execution. By default redirection is enabled.
      *
      * @return this
-     * @see #captureStandardOutput(org.gradle.api.logging.LogLevel)
+     * @see #captureStandardOutput(LogLevel)
      */
     Task disableStandardOutputCapture();
 

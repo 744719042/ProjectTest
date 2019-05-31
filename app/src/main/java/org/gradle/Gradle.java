@@ -96,7 +96,7 @@ public class Gradle {
 
     /**
      * Evaluates the settings and all the projects. The information about available tasks and projects is accessible
-     * via the {@link org.gradle.api.invocation.Build#getRootProject()} object.
+     * via the {@link Build#getRootProject()} object.
      *
      * @return A BuildResult object
      */
@@ -111,8 +111,8 @@ public class Gradle {
     /**
      * Evaluates the settings and all the projects. Evaluates the settings and all the projects.
      * The information about available tasks and projects is accessible via the
-     * {@link org.gradle.api.invocation.Build#getRootProject()} object. Fills the execution plan without running the build.
-     * The tasks to be executed tasks are available via {@link org.gradle.api.invocation.Build#getTaskGraph()}.
+     * {@link Build#getRootProject()} object. Fills the execution plan without running the build.
+     * The tasks to be executed tasks are available via {@link Build#getTaskGraph()}.
      *
      * @return A BuildResult object
      */

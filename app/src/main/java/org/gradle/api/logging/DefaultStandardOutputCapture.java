@@ -57,7 +57,7 @@ public class DefaultStandardOutputCapture implements StandardOutputCapture {
     }
 
     /**
-     * @see org.gradle.api.logging.StandardOutputCapture#stop() ()
+     * @see StandardOutputCapture#stop() ()
      */
     public DefaultStandardOutputCapture stop() {
         StandardOutputLogging.flush();
@@ -66,14 +66,14 @@ public class DefaultStandardOutputCapture implements StandardOutputCapture {
     }
 
     /**
-     * @see org.gradle.api.logging.StandardOutputCapture#isEnabled() ()
+     * @see StandardOutputCapture#isEnabled() ()
      */
     public boolean isEnabled() {
         return enabled;
     }
 
     /**
-     * @see org.gradle.api.logging.StandardOutputCapture#getLevel() ()
+     * @see StandardOutputCapture#getLevel() ()
      */
     public LogLevel getLevel() {
         return level;

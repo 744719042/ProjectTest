@@ -223,7 +223,7 @@ public class Wrapper extends DefaultTask {
     /**
      * Returns the distribution base.
      *
-     * @see #setDistributionBase(org.gradle.api.tasks.wrapper.Wrapper.PathBase) 
+     * @see #setDistributionBase(PathBase)
      */
     public PathBase getDistributionBase() {
         return distributionBase;
@@ -262,7 +262,7 @@ public class Wrapper extends DefaultTask {
     /**
      * Returns the archive base.
      *
-     * @see #setArchiveBase(org.gradle.api.tasks.wrapper.Wrapper.PathBase) 
+     * @see #setArchiveBase(PathBase)
      */
     public PathBase getArchiveBase() {
         return archiveBase;

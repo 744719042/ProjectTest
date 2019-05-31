@@ -33,5 +33,5 @@ public interface SettingsConverter {
     IvySettings convertForPublish(List<DependencyResolver> publishResolvers, File gradleUserHome, DependencyResolver internalRepository);
 
     IvySettings convertForResolve(List<DependencyResolver> classpathResolvers, File gradleUserHome, DependencyResolver internalRepository,
-                        Map clientModuleRegistry);
+                                  Map clientModuleRegistry);
 }

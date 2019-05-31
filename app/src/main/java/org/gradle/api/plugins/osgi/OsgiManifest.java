@@ -166,7 +166,7 @@ public interface OsgiManifest {
     /**
      * Returns the classes dir.
      *
-     * @see #setClassesDir(java.io.File) 
+     * @see #setClassesDir(File)
      */
     File getClassesDir();
 
@@ -193,7 +193,7 @@ public interface OsgiManifest {
     /**
      * Returns the classpath.
      *
-     * @see #setClasspath(java.util.List) 
+     * @see #setClasspath(List)
      */
     List<File> getClasspath();
 
@@ -209,7 +209,7 @@ public interface OsgiManifest {
     /**
      * Returns the classpath types.
      *
-     * @see #setClasspathTypes(java.util.List)
+     * @see #setClasspathTypes(List)
      */
     List<String> getClasspathTypes();
 

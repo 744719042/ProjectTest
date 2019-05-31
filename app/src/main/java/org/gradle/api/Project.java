@@ -70,11 +70,11 @@ import java.util.Set;
  *
  * <p>A project generally has a number of dependencies it needs in order to do its work.  Also, a project generally
  * produces a number of artifacts, which other projects can use. Those dependencies are grouped in configurations, and
- * can be retrieved and uploaded from repositories. You use the {@link org.gradle.api.artifacts.dsl.ConfigurationHandler}
+ * can be retrieved and uploaded from repositories. You use the {@link ConfigurationHandler}
  * returned by {@link #getConfigurations()} ()} method to manage the configurations. The {@link
- * org.gradle.api.artifacts.dsl.DependencyHandler} returned by {@link #getDependencies()} method to manage the
- * dependencies. The {@link org.gradle.api.artifacts.dsl.ArtifactHandler} returned by {@link #getArtifacts()} ()} method
- * to manage the artifacts. The {@link org.gradle.api.artifacts.dsl.RepositoryHandler} returned by {@link
+ * DependencyHandler} returned by {@link #getDependencies()} method to manage the
+ * dependencies. The {@link ArtifactHandler} returned by {@link #getArtifacts()} ()} method
+ * to manage the artifacts. The {@link RepositoryHandler} returned by {@link
  * #getRepositories()} ()} method to manage the repositories.</p>
  *
  * <h3>Multi-project Builds</h3>
@@ -385,7 +385,7 @@ public interface Project extends Comparable<Project> {
 
     /**
      * <p>Creates a {@link Task} with the given name and adds it to this project. Calling this method is equivalent to
-     * calling {@link #createTask(java.util.Map, String)} with an empty options map.</p>
+     * calling {@link #createTask(Map, String)} with an empty options map.</p>
      *
      * <p>After the task is added to the project, it is made available as a property of the project, so that you can
      * reference the task by name in your build file.  See <a href="#properties">here</a> for more details</p>
@@ -402,7 +402,7 @@ public interface Project extends Comparable<Project> {
     /**
      * <p>Creates a {@link Task} with the given name and adds it to this project. Before the task is returned, the given
      * action is passed to the task's {@link Task#doFirst(TaskAction)} method. Calling this method is equivalent to
-     * calling {@link #createTask(java.util.Map, String, TaskAction)} with an empty options map.</p>
+     * calling {@link #createTask(Map, String, TaskAction)} with an empty options map.</p>
      *
      * <p>After the task is added to the project, it is made available as a property of the project, so that you can
      * reference the task by name in your build file.  See <a href="#properties">here</a> for more details</p>
@@ -425,13 +425,13 @@ public interface Project extends Comparable<Project> {
      *
      * <tr><th>Option</th><th>Description</th><th>Default Value</th></tr>
      *
-     * <tr><td><code>{@value org.gradle.api.Task#TASK_TYPE}</code></td><td>The class of the task to
+     * <tr><td><code>{@value Task#TASK_TYPE}</code></td><td>The class of the task to
      * create.</td><td>{@link org.gradle.api.DefaultTask}</td></tr>
      *
-     * <tr><td><code>{@value org.gradle.api.Task#TASK_OVERWRITE}</code></td><td>Replace an existing
+     * <tr><td><code>{@value Task#TASK_OVERWRITE}</code></td><td>Replace an existing
      * task?</td><td><code>false</code></td></tr>
      *
-     * <tr><td><code>{@value org.gradle.api.Task#TASK_DEPENDS_ON}</code></td><td>A task name or set of task names which
+     * <tr><td><code>{@value Task#TASK_DEPENDS_ON}</code></td><td>A task name or set of task names which
      * this task depends on</td><td><code>[]</code></td></tr>
      *
      * </table>
@@ -453,7 +453,7 @@ public interface Project extends Comparable<Project> {
     /**
      * <p>Creates a {@link Task} with the given name and adds it to this project. Before the task is returned, the given
      * action is passed to the task's {@link Task#doFirst(TaskAction)} method. A map of creation options can be passed
-     * to this method to control how the task is created. See {@link #createTask(java.util.Map, String)} for the
+     * to this method to control how the task is created. See {@link #createTask(Map, String)} for the
      * available options.</p>
      *
      * <p>After the task is added to the project, it is made available as a property of the project, so that you can
@@ -474,7 +474,7 @@ public interface Project extends Comparable<Project> {
     /**
      * <p>Creates a {@link Task} with the given name and adds it to this project. Before the task is returned, the given
      * action closure is passed to the task's {@link Task#doFirst(Closure)} method. Calling this method is equivalent to
-     * calling {@link #createTask(java.util.Map, String, Closure)} with an empty options map.</p>
+     * calling {@link #createTask(Map, String, Closure)} with an empty options map.</p>
      *
      * <p>After the task is added to the project, it is made available as a property of the project, so that you can
      * reference the task by name in your build file.  See <a href="#properties">here</a> for more details</p>
@@ -492,7 +492,7 @@ public interface Project extends Comparable<Project> {
     /**
      * <p>Creates a {@link Task} with the given name and adds it to this project. Before the task is returned, the given
      * action closure is passed to the task's {@link Task#doFirst(Closure)} method. A map of creation options can be
-     * passed to this method to control how the task is created. See {@link #createTask(java.util.Map, String)} for the
+     * passed to this method to control how the task is created. See {@link #createTask(Map, String)} for the
      * available options.</p>
      *
      * <p>After the task is added to the project, it is made available as a property of the project, so that you can
@@ -945,7 +945,7 @@ public interface Project extends Comparable<Project> {
     /**
      * Disables redirection of standard output during project evaluation. By default redirection is enabled.
      *
-     * @see #captureStandardOutput(org.gradle.api.logging.LogLevel)
+     * @see #captureStandardOutput(LogLevel)
      */
     void disableStandardOutputCapture();
 
@@ -960,8 +960,8 @@ public interface Project extends Comparable<Project> {
      *
      * @param level The level standard out should be logged to.
      * @see #disableStandardOutputCapture()
-     * @see Task#captureStandardOutput(org.gradle.api.logging.LogLevel)
-     * @see org.gradle.api.Task#disableStandardOutputCapture()
+     * @see Task#captureStandardOutput(LogLevel)
+     * @see Task#disableStandardOutputCapture()
      */
     void captureStandardOutput(LogLevel level);
 

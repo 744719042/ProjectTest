@@ -87,7 +87,7 @@ public interface TaskContainer extends TaskCollection<Task>, DomainObjectContain
 
     /**
      * <p>Creates a {@link Task} adds it to this container. A map of creation options can be passed to this method to
-     * control how the task is created. See {@link #add(java.util.Map)} for the list of options available. The given
+     * control how the task is created. See {@link #add(Map)} for the list of options available. The given
      * closure is used to configure the task before it is returned by this method.</p>
      *
      * <p>After the task is added, it is made available as a property of the project, so that you can reference the task
