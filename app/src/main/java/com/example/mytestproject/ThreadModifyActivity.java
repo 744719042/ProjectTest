@@ -1,5 +1,6 @@
 package com.example.mytestproject;
 
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +11,7 @@ import com.example.mytestproject.utils.ThreadUtils;
 public class ThreadModifyActivity extends AppCompatActivity {
     private static final String TAG = "ThreadModifyActivity";
     private TextView textView;
+    private Handler handler = new Handler();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,13 +24,18 @@ public class ThreadModifyActivity extends AppCompatActivity {
 //            }
 //        }).start();
         Log.d(TAG, "onCreate(): width = " + textView.getWidth() + ", height = " + textView.getHeight());
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                Log.d(TAG, "Handler post: run(): width = " + textView.getWidth() + ", height = " + textView.getHeight());
+            }
+        });
         textView.post(new Runnable() {
             @Override
             public void run() {
-                Log.d(TAG, "run(): width = " + textView.getWidth() + ", height = " + textView.getHeight());
+                Log.d(TAG, "View.post(): run(): width = " + textView.getWidth() + ", height = " + textView.getHeight());
             }
         });
-
         TextView myTextView = new TextView(this);
         myTextView.post(new Runnable() {
             @Override
@@ -41,12 +48,12 @@ public class ThreadModifyActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                ThreadUtils.sleep(100);
-                textView.setText("Good Morning");
-            }
-        }).start();
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                ThreadUtils.sleep(100);
+//                textView.setText("Good Morning");
+//            }
+//        }).start();
     }
 }
