@@ -13,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void restart(View view) {
+        throw new RuntimeException("Restart Exception");
+    }
+
     public void startNetwork(View view) {
         Intent intent = new Intent(this, NetworkActivity.class);
         startActivity(intent);

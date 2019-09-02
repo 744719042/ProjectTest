@@ -12,6 +12,13 @@
         android:layout_width="match_parent"
         android:textAllCaps="false"
         android:layout_height="wrap_content"
+        android:onClick="restart"
+        android:text="重启应用" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
         android:onClick="startNetwork"
         android:text="网络请求泄露" />
 

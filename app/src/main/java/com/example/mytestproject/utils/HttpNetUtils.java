@@ -13,7 +13,7 @@ public class HttpNetUtils {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                ThreadUtils.sleep(2000); // 模拟网络比较慢
+                ThreadUtils.sleep(20000); // 模拟网络比较慢
                 HttpURLConnection http = null;
                 try {
                     http = (HttpURLConnection) new URL(url).openConnection();

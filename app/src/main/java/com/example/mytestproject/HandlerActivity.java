@@ -21,7 +21,7 @@ public class HandlerActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Hello world!", Toast.LENGTH_SHORT).show();
             }
         };
-        mHandler.postDelayed(mRunnable, 5000);
+        mHandler.postDelayed(mRunnable, 50000);
     }
 
     @Override
