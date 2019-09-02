@@ -8,6 +8,7 @@
     tools:context=".ScrollActivity">
 
     <com.example.mytestproject.widget.MyFrameLayout
+        android:background="@drawable/scroll_bg"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="150dp">
