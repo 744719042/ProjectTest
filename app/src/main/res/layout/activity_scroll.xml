@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.example.mytestproject.widget.MyFrameLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,11 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".ScrollActivity">
 
-    <TextView
-        android:id="@+id/text"
+    <com.example.mytestproject.widget.MyFrameLayout
         android:layout_gravity="center"
-        android:text="@string/long_text"
         android:layout_width="300dp"
-        android:layout_height="800dp" />
+        android:layout_height="150dp">
 
-</com.example.mytestproject.widget.MyFrameLayout>
+        <TextView
+            android:id="@+id/text"
+            android:layout_gravity="top"
+            android:text="@string/long_text"
+            android:layout_width="300dp"
+            android:layout_height="800dp" />
+
+    </com.example.mytestproject.widget.MyFrameLayout>
+
+</FrameLayout>
