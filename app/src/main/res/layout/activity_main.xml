@@ -64,4 +64,8 @@
         android:onClick="choreographer"
         android:text="帧同步对象" />
 
+    <Button
+        android:onClick="testScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

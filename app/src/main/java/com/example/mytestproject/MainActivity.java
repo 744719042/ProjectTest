@@ -51,4 +51,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ChoreographerActivity.class);
         startActivity(intent);
     }
+
+    public void testScroll(View view) {
+        Intent intent = new Intent(this, ScrollActivity.class);
+        startActivity(intent);
+    }
 }
