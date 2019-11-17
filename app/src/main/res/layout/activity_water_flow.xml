@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WaterFlowActivity">
+
+    <com.example.mytestproject.widget.WaterFlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@drawable/label_bg"
+            android:text="细心的服务"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:background="@drawable/label_bg"
+            android:text="南昌公园发生命案"
+            android:textColor="#ffffff"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:background="@drawable/label_bg"
+            android:text="汶川3.4级地震"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:background="@drawable/label_bg"
+            android:text="示意图"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:background="@drawable/label_bg"
+            android:text="第一剪傅正义逝世"
+            android:textColor="#ffffff"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:background="@drawable/label_bg"
+            android:text="必须做到"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:background="@drawable/label_bg"
+            android:text="要想成功"
+            android:textColor="#ffffff"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:background="@drawable/label_bg"
+            android:text="示意图"
+            android:textColor="#ffffff"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:background="@drawable/label_bg"
+            android:text="为美好而来"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:background="@drawable/label_bg"
+            android:text="美国宇航局"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:background="@drawable/label_bg"
+            android:text="毕节气象"
+            android:textColor="#ffffff"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.example.mytestproject.widget.WaterFlowLayout>
+
+</FrameLayout>

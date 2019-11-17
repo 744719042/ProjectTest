@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.mytestproject.widget.WaterFlowLayout;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -54,6 +56,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void testScroll(View view) {
         Intent intent = new Intent(this, ScrollActivity.class);
+        startActivity(intent);
+    }
+
+    public void testFlow(View view) {
+        Intent intent = new Intent(this, WaterFlowActivity.class);
+        startActivity(intent);
+    }
+
+    public void testScrollView(View view) {
+        Intent intent = new Intent(this, ScrollViewActivity.class);
         startActivity(intent);
     }
 }

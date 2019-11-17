@@ -29,7 +29,9 @@
             android:name=".RestartService"
             android:process="com.example.remote" />
 
-        <activity android:name=".ScrollActivity"></activity>
+        <activity android:name=".ScrollActivity" />
+        <activity android:name=".WaterFlowActivity" />
+        <activity android:name=".ScrollViewActivity"></activity>
     </application>
 
 </manifest>
